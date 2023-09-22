@@ -8,7 +8,7 @@ export class ValidationPipe implements PipeTransform {
     if (type === 'name') {
       return typeof value === 'string' && value.trim().length >= 2;
     } else if (type === 'number') {
-      // console.log(!isNaN(Number(value)));
+      console.log(!isNaN(Number(value)));
 
       // Number() is return number or not if enter 123 o/p 123 but any alphabet o/p NaN (not a number)
       // isNaN check this Number or not if value is number then o/p false otherwise true

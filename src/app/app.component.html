@@ -16,7 +16,12 @@
     </div>
     <div class="mb-3">
       <label for="number" id="number" class="form-label">Number</label>
-      <input type="text" class="form-control" formControlName="number" />
+      <input
+        maxlength="10"
+        type="text"
+        class="form-control"
+        formControlName="number"
+      />
       <span
         *ngIf="form.get('number')?.value | validation : 'number'; else loading1"
       >
